@@ -1,7 +1,14 @@
+import java.util.Scanner;
+
 public class Hello {
     public static void main(String[] args) {
-        System.out.println("Hello from Java on my HP Chromebook!");
-        System.out.println("My name is Pavani");
-        System.out.println("I just installed JDK 21");
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("What's your name? ");
+        String name = input.nextLine();
+        
+        System.out.println("Hello, " + name +"!");
+        System.out.println("You just ran Java on a Chromebook!");
+        input.close();
     }
 }
