@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Properties Example</title>
+    <style>
+        h2 {
+            font-family: 'Times New Roman', serif;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;  /* Centers boxes horizontally */
+            align-items: center;      /* Centers boxes vertically */
+            flex-direction: row;      /* Puts boxes in a row */
+            gap: 23px;                /* Space between boxes */
+            height: 300px;
+            border: 2px solid purple; /* Purple border around container */
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #8a2be2; /* Purple */
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Flex Properties Example</h2>
+    
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+</body>
+</html>
